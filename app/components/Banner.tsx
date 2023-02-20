@@ -2,12 +2,14 @@ import { Box, Container,Flex, Heading, Text, Button,Image  } from '@chakra-ui/re
 import React from 'react'
 import logo2 from '../../public/logo2.webp'
 import bg4 from '../../public/bg4.png'
+import {RevealWrapper} from 'next-reveal'
 // import Image from 'next/image'
 
 export default function Banner() {
   return (
     <>
     <Box bgSize={'cover'} bgImage='bg4.png'>
+        <RevealWrapper origin='left' delay={200} duration={1500} distance='500px' reset={true}>
         <Container maxW={1400}>
             <Flex pt={{lg:'150px', base:'30px'}} pb={'100px'} px={{lg:'40px', base: '5px'}} display={{lg:'flex', base:'grid'}}>
                 <Box flexBasis={'50%'} px={'30px'}>
@@ -24,18 +26,30 @@ export default function Banner() {
             </Flex>
 
         </Container>
+        </RevealWrapper>
     </Box>
     <Box>
         <Container maxW={1400}>
             <Flex gap={{lg:'100px', base:'10px'}} display={{lg:'flex', base:'grid'}}>
             <Box flexBasis={'50%'}>
+            <RevealWrapper origin='left' delay={200} duration={1000} distance='500px' reset={true}>
+
                 <Image src='/logo4.webp' alt={'firstpagelogo'} width={{lg:'400',md:'250',base:'200'}} height={{lg:'400',md:'300' ,base:'250'}}></Image>
+                </RevealWrapper>
+
             </Box>
+
+
             <Box flexBasis={'50%'} pt={{lg:'80px', base:'5px'}} px={{lg:'0', base:'5px'}}>
+            <RevealWrapper origin='right' delay={200} duration={1000} distance='500px' reset={true}>
+
                 <Heading pl={'15px'} pt={'10px'} size={'xl'}>Program Of Studies</Heading>
                 <Text pl={'15px'} pr={'100px'} pt={'10px'}>This curriculum is intended for beginners who want to learn software development from the ground up. It is going to be a fifteen-month-long hybrid program that includes both onsite and online classes and is divided into five quarters of 13 weeks each. The emphasis will be on hands-on learning by educating students to produce projects.</Text>
                 <Button ml={'15px'} mt={'10px'} size='lg' colorScheme={'teal'}>Read More</Button>
+                </RevealWrapper>
+
             </Box>
+
             </Flex>
 
         </Container>
@@ -45,12 +59,19 @@ export default function Banner() {
         <Container maxW={1400}>
             <Flex gap={{lg:'100px', base:'10px'}} display={{lg:'flex', base:'grid'}}>
             <Box pl={{lg:'60px', base:'5px'}} flexBasis={'50%'} pt={{lg:'80px', base:'30px'}} px={{lg:'0', base:'5px'}}>
+            
+            <RevealWrapper origin='left' delay={200} duration={1000} distance='500px' reset={true}>
                 <Heading pl={'15px'} pt={'20px'} size={'xl'}>What Is Panaverse DAO</Heading>
                 <Text pl={'15px'} pr={'100px'} pt={'10px'}>Panaverse DAO is a community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. Panaverse DAO is struggling to produce professional metaverse developers from Pakistan for the upcoming Era of Internet.</Text>
                 <Button ml={'15px'} mt={'10px'} size='lg' colorScheme={'teal'}>Read More</Button>
+                </RevealWrapper>
             </Box>
+
             <Box flexBasis={'50%'}>
+            <RevealWrapper origin='right' delay={200} duration={1000} distance='500px' reset={true}>
                 <Image src='/logo3.webp' alt={'firstpagelogo'} mb={'50px'} width={{lg:'400',md:'250', base:'200'}} height={{lg:'350',md:'300', base:'250'}}></Image>
+                </RevealWrapper>
+
             </Box>
             
             </Flex>
