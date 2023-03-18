@@ -14,13 +14,13 @@ export default function About() {
       <Container maxW={1400}>
         <Flex my={'50px'} px={{lg:'50px', base:'20px'}} gap={'40px'} display={{lg:'flex', base:'grid'}}>
           <Box flexBasis={'50%'}>
-          <RevealWrapper origin='left' delay={200} duration={1000} distance='500px' reset={true}>
+          <RevealWrapper origin='left' delay={200} duration={300} distance='300px' reset={true}>
             <Image mx={'auto'} src='/President.webp' alt='President' />
             </RevealWrapper>
           </Box>
 
           <Box flexBasis={'50%'}>
-            <RevealList interval={60}  origin='right' delay={200} duration={1000} distance='500px' reset={true} >
+            <RevealList interval={10}  origin='right' delay={200} duration={300} distance='100px' reset={true} >
             <Heading size={'xl'}>Dr. Arif Alvi</Heading>
             <Text mt={5}>Dr. Arif Alvi was sworn in as the 13th President of Islamic Republic of Pakistan on 9th September 2018.            
            </Text>
@@ -44,7 +44,7 @@ export default function About() {
           
           <Box flexBasis={'50%'}>
           
-          <RevealList interval={60}  origin='left' delay={200} duration={1000} distance='500px' reset={true} >
+          <RevealList interval={10}  origin='left' delay={200} duration={300} distance='10px' reset={true} >
 
             <Heading size={'xl'}>Panaverse DAO</Heading>
             <Text mt={5}>Panaverse DAO is a community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. Panaverse DAO is struggling to produce professional metaverse developers from Pakistan for the upcoming Era of Internet            
@@ -56,7 +56,7 @@ export default function About() {
           </Box>
           
           <Box flexBasis={'50%'} m={'auto'} mt={{lg:'0px', base:'-15'}}>
-          <RevealWrapper origin='right' delay={200} duration={1000} distance='500px' reset={true}>
+          <RevealWrapper origin='right' delay={200} duration={300} distance='10px' reset={true}>
 
             <Image mx={'auto'} src='/logo.png' alt='Panaverse'  width={{lg:'400', sm:'280'}} height={{lg:'400', sm:'280'}} />
             </RevealWrapper>
@@ -73,13 +73,13 @@ export default function About() {
 
         <Box flexBasis={'50%'} m={'auto'} mt={{lg:'50px', base:'-35'}}>
 
-        <RevealWrapper origin='left' delay={200} duration={1000} distance='500px' reset={true}>
+        <RevealWrapper origin='left' delay={200} duration={300} distance='100px' reset={true}>
             <Image mx={'auto'} src='/Zia.webp' alt='Sir Zia'  width={{lg:'400', sm:'280'}} height={{lg:'400', sm:'280'}} />
             </RevealWrapper>
           </Box>
           
           <Box flexBasis={'50%'} >
-          <RevealList interval={60}  origin='right' delay={200} duration={1000} distance='500px' reset={true} >
+          <RevealList interval={10}  origin='right' delay={200} duration={300} distance='300px' reset={true} >
 
             <Heading size={'xl'}>Zia Khan</Heading>
             <Text mt={5}>

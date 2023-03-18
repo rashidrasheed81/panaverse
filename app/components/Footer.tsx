@@ -29,35 +29,37 @@ export default function Footer() {
             <Box>
               <Heading size={'lg'} color={'white'}>Useful Links</Heading>
               <Grid pt={'20px'} pb={'5'} color={'whiteAlpha.600'}>
-              <Link href={'/'}>Home</Link>
-              <Link href={'/'}>Syllabus</Link>
-              <Link href={'/'}>Explore</Link>
-              <Link href={'/'}>About</Link>
-              <Link href={'/'}>Contact</Link>
+              <Link href='/'>Home</Link>
+              <Link href='/syllabus'>Syllabus</Link>
+              <Link href='/explore'>Explore</Link>
+              <Link href='/about'>About</Link>
+              <Link href='/contact'>Contact</Link>
               </Grid>
             </Box>
             <Box>
             <Heading size={'lg'} color={'white'}>Follow Us</Heading>
               <Grid pt={'20px'} pb={'5'} color={'whiteAlpha.600'}>
-              <Link href={'/'}>Facebook</Link>
-              <Link href={'/'}>Linkedin</Link>
-              <Link href={'/'}>Twitter</Link>
-              <Link href={'/'}>Youtube</Link>
-              <Link href={'/'}>Github</Link>
+              <Link href='https://www.facebook.com/groups/panaverse/' target='_blank'>Facebook</Link>
+              <Link href='https://www.linkedin.com/company/panaverse/?originalSubdomain=pk' target='_blank'>Linkedin</Link>
+              <Link href='https://twitter.com/Panaverse_edu' target='_blank'>Twitter</Link>
+              <Link href='https://www.youtube.com/@panaverse' target='_blank'>Youtube</Link>
+              <Link href='https://github.com/panaverse' target='_blank'>Github</Link>
               </Grid>
             </Box>
             <Box>
             <Heading size={'lg'} color={'white'}>Contact Us</Heading>
               <Grid pt={'20px'} pb={'5'} color={'whiteAlpha.600'}>
-              <Link href={'/'}>
+              <Link href={'tel:00923167634620'} target='_blank'>
               <PhoneIcon pr={'1'} />
                 +92 3167634620</Link>
-              <Link href={'/'}>
+              <Link href={'mailto:rashidrasheed81@gmail.com'} target='_blank'>
               <EmailIcon pr={'1'} />
                 rashidrasheed81@gmail.com</Link>
-              <Link href={'/'}>
+              <Link href={"https://goo.gl/maps/RdFJnziwQLvysNp36"} target='_blank'>
                 <Search2Icon pr={'1'} />
-                Kot Radha Kishen, Pakistan</Link>              
+                Kot Radha Kishen, Pakistan</Link>  
+                
+            
               </Grid>
             </Box>
 

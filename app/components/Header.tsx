@@ -1,5 +1,5 @@
 'use client';
-import { Box, Container, SimpleGrid, Flex, Button, Menu, MenuButton, MenuIcon, MenuItem, MenuList, IconButton  } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Flex, Button, Menu, MenuButton, MenuIcon, MenuItem, MenuList, IconButton, Text  } from '@chakra-ui/react'
 import Image from 'next/image';
 import logo from '../../public/logor.png'
 import Link from 'next/link';
@@ -22,7 +22,9 @@ export default function Header() {
                         
                     </Flex>
                     <Box display={{lg:'initial', base:'none'}} pt={'1'}>
+                        <Link href={'https://portal.piaic.org'} target="_blank">
                         <Button mt='10px' size='lg' colorScheme='teal' float='right'>Apply</Button>
+                        </Link>
                     </Box>
 
                     <Box pt='20px' display={{ lg: 'none', base: 'initial' }}>
@@ -35,19 +37,19 @@ export default function Header() {
                             />
                             <MenuList>
                                 <MenuItem>
-                                    Home
+                                <Link href='/' ><Text fontSize={'md'} as='b'>Home</Text></Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    Syllabus
+                                <Link href='/syllabus'><Text fontSize={'md'} as='b'>Syllabus</Text></Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    Explore
+                                <Link href='/explore'><Text fontSize={'md'} as='b'>Explore</Text></Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    About
+                                <Link href='/about'><Text fontSize={'md'} as='b'>About</Text></Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    Contact
+                                <Link href='/contact'><Text fontSize={'md'} as='b'>Contact</Text></Link>
                                 </MenuItem>
                             </MenuList>
                         </Menu>
